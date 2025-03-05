@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FOOD DELIVERY</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="Main-container">
+      <div class="main-header">
+        <div class="nav-header">
+          <ul class="ul-header">
+            <div class="get-the-app">
+              <li><a href="#get-app">Get the App</a></li>
+            </div>
+            <div class="login-signup">
+              <li>
+                <a href=""><p>Investor Relation</p></a>
+              </li>
+              <li>
+                <a href=""><p>Add restaurant</p></a>
+              </li>
+              <li>
+                <a href=""><p>Log in</p></a>
+              </li>
+              <li>
+                <a href=""><p>Sign up</p></a>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <main class="main-div">
+          <img class="zomato-img" src="./images/zomato.avif" alt="" />
+          <h2>Discover the best food & drinks in <span>Bengaluru</span></h2>
+          <div class="form-location">
+            <div class="location">
+              <div id="loaction-image">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div id="location-input">
+                <form action="">
+                  <input type="text" name="dist" placeholder="Bengaluru" />
+                </form>
+              </div>
+              <div id="drop-down-image">
+                <i class="fa-solid fa-caret-down"></i>
+              </div>
+            </div>
+            <div class="form-input-location">
+              <p>|</p>
+              <i class="fa-solid fa-magnifying-glass" id="i-tags"></i>
+              <form action="">
+                <input
+                  type="text"
+                  name="dish"
+                  class="input-location"
+                  placeholder="Search for restaurant, cuisine or a dish"
+                />
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <div class="section-div">
+        <!-- FIRST -->
+        <div class="div-content-section">
+          <div class="specs">
+            <div id="order-online">
+              <div id="order-image"></div>
+              <div id="order-content">
+                <p style="font-size: 1.3rem; color: rgba(0, 0, 0, 0.767)">
+                  Order Online
+                </p>
+                <p style="color: rgba(0, 0, 0, 0.664)">
+                  Stay home and order to your doorstep
+                </p>
+              </div>
+            </div>
+            <div id="dining">
+              <div id="dining-image"></div>
+              <div id="dining-content">
+                <p style="font-size: 1.3rem; color: rgba(0, 0, 0, 0.767)">
+                  Dining
+                </p>
+                <p style="color: rgba(0, 0, 0, 0.664)">
+                  View the city's favourite dining venues
+                </p>
+              </div>
+            </div>
+            <div id="live-events">
+              <div id="live-events-image"></div>
+              <div id="event-content">
+                <p style="font-size: 1.3rem; color: rgba(0, 0, 0, 0.767)">
+                  Live Events
+                </p>
+                <p style="color: rgba(0, 0, 0, 0.664)">
+                  Discover India’s best events & concerts
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="collections">
+          <h1 style="font-size: 2.5rem">Collections</h1>
+          <div id="collection-text">
+            <p style="font-size: 1.05em; color: rgba(0, 0, 0, 0.68)">
+              Explore curated lists of top restaurants, cafes, pubs, and bars in
+              Bengaluru, based on trends
+            </p>
+            <a
+              href="#"
+              style="
+                text-decoration: none;
+                color: rgba(224, 53, 70, 0.797);
+                font-size: 1rem;
+              "
+              >All collections in Bengaluru
+              <span><i class="fa-solid fa-caret-right"></i></span
+            ></a>
+          </div>
+          <div class="collections-images">
+            <div id="trending-spots">
+              <p>Top trending Spots</p>
+
+              <p>41 places <i class="fa-solid fa-caret-right"></i></p>
+            </div>
+            <div id="rooftop-places">
+              <p>Best Rooftop places</p>
+              <p>58 places <i class="fa-solid fa-caret-right"></i></p>
+            </div>
+            <div id="opened-places">
+              <p>Newly opened places</p>
+              <p>38 places <i class="fa-solid fa-caret-right"></i></p>
+            </div>
+            <div id="iftar-specials">
+              <p>iftar specials</p>
+              <p>16 places <i class="fa-solid fa-caret-right"></i></p>
+            </div>
+          </div>
+        </div>
+        <div class="popular">
+          <div class="content">
+            <h1>Popular localities in and around</h1>
+          </div>
+          <div class="locations">
+            <div>
+              <div class="locations-child">
+                <h5>Indiranagar</h5>
+                <p>627 places</p>
+              </div>
+              <div><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+            <div>
+              <div class="second locations-child">
+                <h5>Marathahalli</h5>
+                <p>1084 places</p>
+              </div>
+              <div><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+            <div>
+              <div class="third locations-child">
+                <h5>Whitefield</h5>
+                <p>1130 places</p>
+              </div>
+              <div><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+            <div>
+              <div class="fourth locations-child">
+                <h5>Koramangala 5th Block</h5>
+                <p>334 places</p>
+              </div>
+              <div><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+            <div>
+              <div class="fifth locations-child">
+                <h5>HSR</h5>
+                <p>1056 places</p>
+              </div>
+              <div><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+            <div>
+              <div class="sixth locations-child">
+                <h5>Jayanagar</h5>
+                <p>683 places</p>
+              </div>
+              <div><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+            <div>
+              <div class="seventh locations-child">
+                <h5>JP Nagar</h5>
+                <p>806 places</p>
+              </div>
+              <div><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+            <div>
+              <div class="eight locations-child">
+                <h5>Sarjapur Road</h5>
+                <p>859 places</p>
+              </div>
+              <div><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+            <div>
+              <div class="nine locations-child">
+                <h5>see more</h5>
+                <!-- <p></p> -->
+              </div>
+              <div><i class="fa-solid fa-chevron-down"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="get-zomato-app">
+        <div class="app-image"><img src="./images/phone.avif" alt="" /></div>
+        <div class="app-content">
+          <div class="app-content-first">
+            <h1 style="font-size: 2.7rem; font-weight: 100">
+              Get the Zomato app
+            </h1>
+            <p style="color: rgba(0, 0, 0, 0.578); font-weight: 100">
+              We will send you a link, open it on your phone to download the app
+            </p>
+
+            <div class="radio-zomato-app">
+              <div class="input">
+                <div class="radio">
+                  <input type="radio" name="option" />
+                  <p style="position: relative; left: 10px">Email</p>
+                </div>
+
+                <div class="radio">
+                  <input type="radio" name="option" />
+                  <p style="position: relative; left: 10px">Phone</p>
+                </div>
+              </div>
+            </div>
+            <div class="email">
+              <div><input type="text" placeholder="    Email" /></div>
+              <div>
+                <input
+                  type="submit"
+                  name=""
+                  id=""
+                  value="Share App Link"
+                  style="
+                    background-color: rgb(239, 79, 95);
+                    color: white;
+                    font-size: medium;
+                  "
+                />
+              </div>
+            </div>
+            <!-- <div class="download"> -->
+            <p
+              style="
+                font-weight: lighter;
+                color: rgba(0, 0, 0, 0.42);
+                font-family: Arial, Helvetica, sans-serif;
+              "
+            >
+              Download app from
+            </p>
+
+            <!-- </div> -->
+
+            <div class="stores">
+              <div>
+                <img src="./images/gp.webp" alt="" height="100%" width="100%" />
+              </div>
+              <div>
+                <img src="./images/as.webp" alt="" height="100%" width="100%" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="explore-main">
+        <div class="explore">
+          <!-- <div class="first"> -->
+          <h1 style="color: rgba(0, 0, 0, 0.781); font-size: xx-large">
+            Explore options near me
+          </h1>
+          <!-- </div> -->
+          <div class="explore-options">
+            <p>Popular cuisines near me</p>
+            <p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </p>
+          </div>
+          <div class="explore-options">
+            <p>Popular restaurant types near me</p>
+            <p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </p>
+          </div>
+          <div class="explore-options">
+            <p>Top restaurant chains</p>
+            <p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </p>
+          </div>
+          <div class="explore-options">
+            <p>Cities we deliver to</p>
+            <p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="first-footer">
+          <div class="zomato-img">
+            <img
+              src="./images/zomato-3.avif"
+              style="height: 60%; width: 60%"
+              alt=""
+            />
+          </div>
+          <div class="nation-language">
+            <div>
+              <div>
+                <div id="nation-flag">
+                  <img
+                    src="./images/india-flag.webp"
+                    alt=""
+                    style="height: 15px"
+                  />
+                </div>
+                <div id="nation-name">
+                  <p style="padding-right: 10px">India</p>
+                </div>
+                <div id="drop-down" style="padding-right: 20px">
+                  <i
+                    style="font-size: 10px"
+                    class="fa-solid fa-chevron-down"
+                  ></i>
+                </div>
+              </div>
+              <div>
+                <div style="height: 10px; width: 20%">
+                  <i class="fa-solid fa-globe"></i>
+                </div>
+                <div id="language"><p>English</p></div>
+                <div id="drop-down" style="padding-right: 20px">
+                  <i
+                    style="font-size: 10px"
+                    class="fa-solid fa-chevron-down"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about">
+          <div class="about-zomato">
+            <h5>ABOUT ZOMATO</h5>
+            <div>
+              <p>Who We Are</p>
+              <p>Blog</p>
+              <p>Work With Us</p>
+              <p>Investor Relations</p>
+              <p>Report Fraud</p>
+              <p>Press Kit</p>
+              <p>Contact Us</p>
+            </div>
+          </div>
+          <div class="zomaverse">
+            <h5>ZOMAVERSE</h5>
+            <div>
+              <p>Zomato</p>
+              <p>Blinkit</p>
+              <p>District</p>
+              <p>Feeding India</p>
+              <p>Hyperpure</p>
+              <p>Zomato Live</p>
+              <p>Zomaland</p>
+              <p>Weather Union</p>
+            </div>
+          </div>
+          <div class="for-restaurants">
+            <h5>FOR RESTAURANTS</h5>
+            <div>
+              <p>Partner With Us</p>
+              <p>Apps For You</p>
+            </div>
+          </div>
+          <div class="learn-more">
+            <h5>LEARN MORE</h5>
+            <div>
+              <p>Privacy</p>
+              <p>Security</p>
+              <p>Terms</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <h5>SOCIAL LINKS</h5>
+            <div class="social-links-icons">
+              <i
+                class="fa-brands fa-linkedin"
+                style="color: #000000; font-size: 18px"
+              ></i>
+              <i
+                class="fa-brands fa-square-instagram"
+                style="color: #000000"
+              ></i>
+              <i
+                class="fa-brands fa-square-x-twitter"
+                style="color: #000000"
+              ></i>
+              <i class="fa-brands fa-square-youtube" style="color: #000000"></i>
+              <i class="fa-brands fa-facebook" style="color: #000000"></i>
+            </div>
+            <div class="footer-stores">
+              <div>
+                <img src="./images/gp.webp" alt="" height="100%" width="100%" />
+              </div>
+              <div>
+                <img src="./images/as.webp" alt="" height="100%" width="100%" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="last-footer">
+          <div>
+            <p>
+              By continuing past this page, you agree to our Terms of Service,
+              Cookie Policy, Privacy Policy and Content Policies. All trademarks
+              are properties of their respective owners. 2008-2025 © Zomato™
+              Ltd. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

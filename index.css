@@ -1,0 +1,827 @@
+@font-face {
+  font-family: "Okra Medium";
+  src: url("./font/Okra\ Medium.ttf") format("truetype");
+}
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+.Main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  /* gap: 20px; */
+  margin-bottom: 20px;
+  width: 100vw;
+}
+.Main-container > div {
+  gap: 50px;
+}
+.main-header {
+  height: 70vh;
+  /* width: 100%; */
+  background-image: url("./images/zomato-bg.avif");
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: cover;
+  font-family: Typeface system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.nav-header {
+  height: 15%;
+  width: 100%;
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.ul-header {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* border: 2px solid white; */
+  width: 85%;
+  color: white;
+}
+
+.login-signup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 45%;
+}
+li a:not([href*="#get-app"]) {
+  text-decoration: none;
+  font-size: larger;
+  width: 10rem;
+  color: inherit;
+  /* border: 2px solid rgb(0, 0, 0); */
+}
+
+.get-the-app {
+  width: 50%;
+  font-size: 90%;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+[href*="#get-app"] {
+  font-size: inherit;
+  text-decoration: inherit;
+  color: inherit;
+  /* font-size: small; */
+  /* border: 2px solid rgb(140, 255, 0); */
+}
+
+.main-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  /* position: relative; */
+  height: 70%;
+  width: 100%;
+}
+/* .main-div h1 {
+  font-size: 5rem;
+  font-family: "Okra Medium";
+  padding: 0;
+} */
+.main-div h2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-top: 2.2rem;
+}
+.main-div h2 span {
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+.form-location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 3.5rem;
+  width: 60%;
+  border-radius: 0.5rem;
+  position: relative;
+  top: 1.8rem;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 30%;
+}
+
+#loaction-image {
+  color: rgba(255, 0, 0, 0.397);
+  /* border: 1px solid black; */
+  font-size: 1.2em;
+}
+#drop-down-image {
+  font-size: 1.2em;
+  color: rgba(0, 0, 0, 0.737);
+}
+.form-input-location {
+  width: 70%;
+  color: rgba(0, 0, 0, 0.174);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+}
+.form-input-location form {
+  width: 90%;
+}
+
+.input-location {
+  width: 100%;
+  font-family: "Okra Medium";
+
+  /* border: 2px solid red; */
+}
+#i-tags {
+  /* border: 1px solid black; */
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.361);
+  position: relative;
+  top: 3px;
+}
+
+input {
+  border: none;
+}
+.section-div {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* gap: 20px;
+  background-color: yellow; */
+}
+
+.div-content-section {
+  height: 50vh;
+  width: 95%;
+  /* background: #000; */
+}
+
+.specs {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
+}
+
+.specs > div {
+  height: 85%;
+  width: 30%;
+  outline: 1px solid rgba(0, 0, 0, 0.11);
+  border-radius: 1.1em;
+  font-family: "Okra Medium";
+  /* transition-duration: 0.5s; */
+  transition: ease-in-out 0.3s;
+}
+.specs > div:hover {
+  transform: scale(105%);
+}
+
+#order-image {
+  background-image: url(./images/food1.avif);
+  background-position: center 35%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 70%;
+  /* border: 2px solid green; */
+  border-radius: 1.1em 1.1em 0px 0px;
+}
+#order-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0.5rem 1rem 1rem 1.8rem;
+}
+#dining-image {
+  background-image: url(./images/dining.avif);
+  background-position: center 35%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 70%;
+  /* border: 2px solid green; */
+  border-radius: 1.1em 1.1em 0px 0px;
+}
+#dining-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0.5rem 1rem 1rem 1.8rem;
+}
+
+#live-events-image {
+  background-image: url(./images/party.jpg);
+  background-position: center 35%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 70%;
+  /* border: 2px solid green; */
+  border-radius: 1.1em 1.1em 0px 0px;
+}
+#event-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0.5rem 1rem 1rem 1.8rem;
+}
+
+.collections {
+  font-family: "Okra Medium";
+  height: 70vh;
+  width: 90%;
+  /* border: 2px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+}
+
+#collection-text {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  width: 100%;
+  font-family: "Okra Medium";
+  position: relative;
+  bottom: 18px;
+}
+
+.collections-images {
+  height: 70%;
+  /* border: 2px solid rebeccapurple; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.collections-images > div {
+  height: 100%;
+  width: 24.3%;
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  border-radius: 0.4em 0.4em;
+}
+.collections-images > div p {
+  color: rgb(255, 255, 255);
+  position: relative;
+  left: 5%;
+  bottom: 10px;
+}
+#trending-spots {
+  background-image: url(./images/trending.png);
+}
+#rooftop-places {
+  background-image: url(./images/rooftop.png);
+}
+#opened-places {
+  background-image: url(./images/places.png);
+}
+#iftar-specials {
+  background-image: url(./images/iftar.png);
+}
+
+.popular {
+  font-family: "Okra Medium";
+  height: 70vh;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.locations {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  font-family: "Okra Medium";
+}
+
+.locations > div {
+  outline: 1px solid rgba(60, 60, 60, 0.171);
+  height: 20%;
+  width: 32.5%;
+  border-radius: 0.5rem 0.5rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.057);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.locations-child {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.locations-child p {
+  color: rgba(0, 0, 0, 0.568);
+  font-weight: 100;
+  font-size: medium;
+  padding-top: 6px;
+}
+
+.locations > div h5 {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+.nine {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.get-zomato-app {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 251, 247);
+  position: relative;
+  font-family: "Okra Medium";
+  top: 30px;
+}
+
+.app-image {
+  height: 80%;
+  width: 35%;
+  display: flex;
+  align-items: start;
+  justify-content: end;
+}
+.app-image img {
+  height: 90%;
+  width: 90%;
+  position: relative;
+  /* bottom: 25px; */
+}
+.app-content {
+  height: 80%;
+  width: 36.28%;
+}
+.app-content-first {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+  height: 80%;
+}
+
+.radio-zomato-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  height: 6%;
+}
+
+.radio-zomato-app > div {
+  height: 100%;
+  text-align: center;
+  font-size: medium;
+  color: rgba(0, 0, 0, 0.578);
+  font-weight: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+
+input[type="radio"]:checked {
+  background-color: red;
+  border: 2px solid red;
+}
+
+input[type="radio"]:checked::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.input {
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  width: 100%;
+}
+.radio {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+.email {
+  height: 13%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.email > div:first-child {
+  height: 100%;
+  width: 65%;
+}
+.email > div:last-child {
+  height: 100%;
+  width: 33%;
+}
+.email > div input {
+  border: 1px solid #3333333c;
+  border-radius: 3px 3px;
+  height: 100%;
+  width: 100%;
+}
+
+.stores {
+  height: 11%;
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.stores > div {
+  height: 100%;
+  width: 46%;
+}
+.explore-main {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.explore {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  font-family: "Okra Medium";
+}
+.first {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+.explore-options {
+  height: 15%;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.199);
+  border-radius: 5px 5px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px 0px 20px;
+}
+
+footer {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: rgb(248, 248, 248);
+}
+.first-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 30%;
+  width: 90%;
+}
+
+.first-footer .nation-language {
+  height: 60%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.first-footer .nation-language div {
+  height: 90%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.first-footer .nation-language div > div {
+  height: 60%;
+  width: fit-content;
+  border: 1px solid rgba(0, 0, 0, 0.199);
+  border-radius: 5px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0px 3px 0px 3px;
+}
+
+#nation-flag {
+  height: 20px;
+  width: 25px;
+  border: none;
+}
+
+#nation-name {
+  height: 30%;
+  width: 60%;
+  font-family: "Okra Medium";
+  color: #333;
+  border: none;
+}
+
+#drop-down {
+  height: 5%;
+  width: 10%;
+  border: none;
+}
+
+#language {
+  height: 30%;
+  width: 50%;
+  font-family: "Okra Medium";
+  color: #333;
+  border: none;
+}
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 90%;
+}
+.about > div {
+  height: 70%;
+  width: 17%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+.about > div h5 {
+  color: #333;
+  font-family: "Okra Medium";
+  letter-spacing: 2px;
+  line-height: 30px;
+}
+.about-zomato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-zomato div {
+  height: 100%;
+  /* border: 2px solid rebeccapurple; */
+  font-family: "Okra Medium";
+  color: #33333398;
+  font-size: small;
+  font-weight: lighter;
+  line-height: 30px;
+}
+.zomaverse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.zomaverse div {
+  height: 100%;
+  /* border: 2px solid rebeccapurple; */
+  font-family: "Okra Medium";
+  color: #33333398;
+  font-size: small;
+  font-weight: lighter;
+  line-height: 30px;
+}
+.for-restaurants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.for-restaurants div {
+  height: 100%;
+  /* border: 2px solid rebeccapurple; */
+  font-family: "Okra Medium";
+  color: #33333398;
+  font-size: small;
+  font-weight: lighter;
+  line-height: 30px;
+}
+.learn-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.learn-more div {
+  height: 100%;
+  /* border: 2px solid rebeccapurple; */
+  font-family: "Okra Medium";
+  color: #33333398;
+  font-size: small;
+  font-weight: lighter;
+  line-height: 30px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.social-links-icons {
+  height: 10%;
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social-links-icons i {
+  display: inline-flex; /* Makes sure it centers properly */
+  align-items: center;
+  justify-content: center;
+  width: 20px; /* Adjust size */
+  height: 20px; /* Adjust size */
+  background-color: #ffffff; /* Circle background color */
+  border-radius: 50%; /* Makes it circular */
+  color: rgb(255, 255, 255); /* Icon color */
+  font-size: 16px; /* Adjust icon size */
+}
+.footer-stores {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+}
+.last-footer {
+  width: 90%;
+  color: #33333398;
+  font-family: "Okra Medium";
+  font-size: 0.8rem;
+  font-weight: lighter;
+  border-top: 1px solid #33333338;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.zomato-img {
+  height: 20%;
+  width: 22%;
+}
+@media screen and (max-width: 480px) {
+  .main-div h2 {
+    font-size: 1rem;
+  }
+  .main-div h2 span {
+    font-size: 1.3rem;
+  }
+  .zomato-img {
+    height: 15%;
+    width: 30%;
+  }
+  .main-header {
+    height: 50vh;
+    width: 100vw;
+  }
+  .ul-header {
+    /* background-color: #333; */
+    width: 90%;
+  }
+  .get-the-app {
+    width: 25%;
+    font-size: 0.5rem;
+  }
+  .login-signup {
+    width: 55%;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    height: 15%;
+  }
+
+  .login-signup li a {
+    font-size: 0.5rem;
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .form-location {
+    height: 15%;
+    width: 60%;
+  }
+  .location {
+    height: 100%;
+    width: 30%;
+  }
+  #loaction-image {
+    font-size: 12px;
+  }
+  #location-input {
+    height: 40%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #location-input form input {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #location-input form input::placeholder {
+    font-size: 7px;
+  }
+  #drop-down-image {
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-input-location {
+    height: 90%;
+    width: 100%;
+ 
+  }
+  .input-location {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .input-location::placeholder {
+    font-size: 7px;
+  }
+  #i-tags {
+    font-size: 10px;
+  }
+}
